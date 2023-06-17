@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
-const OrderReview = () => {
+const Cart = () => {
     return (
         <div>
-            <h3>Order review page</h3>
+            <h4>Order summary</h4>
         </div>
     );
 };
 
-export default OrderReview;
+export default Cart;
