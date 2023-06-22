@@ -10,6 +10,7 @@ import {
 import Home from './components/Home/Home.jsx';
 import Main from './components/Layout/Main.jsx';
 import OrderReview from './components/OrderReview/OrderReview.jsx';
+import Grandpa from './components/Grandpa/Grandpa.jsx';
 
 
 const router = createBrowserRouter([
@@ -18,13 +19,17 @@ const router = createBrowserRouter([
     element: <Main />,
     children: [
       {
-        path:'/',
-        element:<Home/>,
-        loader:() => fetch('tshirts.json')
+        path: '/',
+        element: <Home />,
+        loader: () => fetch('tshirts.json')
       },
       {
-        path:'review',
-        element: <OrderReview/>
+        path: 'review',
+        element: <OrderReview />
+      },
+      {
+        path: 'grandpa',
+        element: <Grandpa />
       }
     ]
   },
