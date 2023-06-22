@@ -11,6 +11,7 @@ import Home from './components/Home/Home.jsx';
 import Main from './components/Layout/Main.jsx';
 import OrderReview from './components/OrderReview/OrderReview.jsx';
 import Grandpa from './components/Grandpa/Grandpa.jsx';
+import InterviewQuestions from './components/InterviewQuestions/InterviewQuestions.jsx';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: 'grandpa',
         element: <Grandpa />
+      },
+      {
+        path:'question',
+        element:<InterviewQuestions/>
       }
     ]
   },
